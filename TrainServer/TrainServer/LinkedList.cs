@@ -35,10 +35,6 @@
         }
 
         public void remove(T data) { }
-        public Node<T> pront()
-        {
-            return head;
-        }
 
         // Other methods for LinkedList implementation...
     }
