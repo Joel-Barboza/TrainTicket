@@ -1,4 +1,5 @@
-﻿namespace TrainServer.Entities
+﻿using TrainServer;
+namespace TrainServer.Entities
 {
     public class TrainRoute
     {
@@ -10,7 +11,8 @@
 
         public string End { get; set; }
 
-        public TrainRoute(string start, string end) { 
+        public TrainRoute(string start, string end)
+        {
             Start = start;
             End = end;
         }

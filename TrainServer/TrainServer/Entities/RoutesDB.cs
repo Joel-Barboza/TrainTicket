@@ -6,5 +6,6 @@
             new TrainRoute("Cartago", "San Jose"),
             new TrainRoute("San Jose", "Heredia")
         };
+        
     }
 }
