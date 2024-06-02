@@ -3,9 +3,9 @@ namespace TrainServer.Entities
 {
     public class TrainRoute
     {
-        public decimal Cost { get; set; }
+        public int Cost { get; set; }
 
-        public decimal DistanceInKm { get; set; }
+        public int DistanceInKm { get; set; }
 
         public string Start { get; set; }
 

@@ -10,9 +10,21 @@ namespace TrainServer.Controllers
         [HttpGet]
         public IEnumerable<TrainRoute>? GetAllRoutes()
         {
-            SinglyLinkedList<int> lists = new SinglyLinkedList<int>();
-            lists.add(3);
-            Console.WriteLine(lists.pront().data);
+            MatrixGraph graph = new MatrixGraph();
+            graph.addVertex("puntarenas");
+            graph.addVertex("alajuela");
+            graph.addVertex("sanJose");
+            graph.addVertex("sanJose");
+            graph.addEdge(5, "sanJose", "alajuela");
+            graph.addVertex("heredia");
+            graph.printGraphMatrix();
+            //DoubleEndedLinkedList dd = new DoubleEndedLinkedList();
+            //dd.add(0, "1");
+            //dd.add(0, "2");
+            //dd.add(0, "3");
+            //dd.add(0, "4");
+            //dd.add(0, "5");
+            //dd.printList();
             return RoutesDB.routes;
         }
 
@@ -21,6 +33,8 @@ namespace TrainServer.Controllers
         {
 
             RoutesDB.routes.Add(route);
+            //RoutesDB.matrixGraph.addRoute(route);
+            //RoutesDB.matrixGraph.addRoute(route);
             return CreatedAtAction("CreateRoute", null);
         }
     }
