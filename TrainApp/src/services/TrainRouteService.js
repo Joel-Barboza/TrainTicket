@@ -1,5 +1,5 @@
 export function GetTrainRoutes() {
-    return fetch('https://localhost:7048/api/routes')
+    return fetch('http://localhost:5134/api/routes')
         .then(response => response.json())
         .then(data => data);
 }

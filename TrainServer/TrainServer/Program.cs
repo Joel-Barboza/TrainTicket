@@ -32,4 +32,3 @@ app.MapControllers();
 
 app.Run();
 
-MatrixGraph matrixGraph = new MatrixGraph();

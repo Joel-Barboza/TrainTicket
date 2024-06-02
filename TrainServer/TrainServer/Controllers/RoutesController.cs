@@ -23,6 +23,7 @@ namespace TrainServer.Controllers
 
             // Adding edges based on the matrix
             graph.addEdge(4, "puntarenas", "alajuela");
+            //RoutesDB.routes.Add(new TrainRoute(4,1, "puntarenas", "alajuela"));
             graph.addEdge(8, "puntarenas", "puriscal");
 
             graph.addEdge(4, "alajuela", "puntarenas");

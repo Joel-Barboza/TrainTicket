@@ -17,9 +17,9 @@ function App() {
       setCurrentTime(Date().toLocaleString());
     }, 1000)
 
-    /* setInterval(() => {
+    setInterval(() => {
       loadData();
-    }, 5000) */
+    }, 5000)
   }, []);
 
   return (

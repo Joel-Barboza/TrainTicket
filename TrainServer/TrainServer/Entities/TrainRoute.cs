@@ -11,8 +11,10 @@ namespace TrainServer.Entities
 
         public string End { get; set; }
 
-        public TrainRoute(string start, string end)
+        public TrainRoute(int cost, int distance, string start, string end)
         {
+            Cost = cost;
+            DistanceInKm = distance;
             Start = start;
             End = end;
         }
