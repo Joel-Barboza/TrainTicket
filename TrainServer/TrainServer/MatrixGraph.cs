@@ -62,7 +62,88 @@ namespace TrainServer
 
         }
 
-        public void addEdge(int weight, string start, string end)
+        public void dijkstra(string start)
+        {
+            var distances = new Dictionary<string, int>();
+            var previousNodes = new Dictionary<string, string>();
+            var priorityQueue = new SortedSet<(int Distance, string Node)>();
+
+            // Initialize distances and priority queue
+            Node currentNode = head;
+            while (currentNode != null)
+            {
+                if (currentNode.start == start)
+                {
+                    distances[currentNode.start] = 0;
+                    priorityQueue.Add((0, currentNode.start));
+                }
+                else
+                {
+                    distances[currentNode.start] = int.MaxValue;
+                    priorityQueue.Add((int.MaxValue, currentNode.start));
+                }
+                previousNodes[currentNode.start] = null;
+                currentNode = currentNode.next;
+            }
+
+            // Process the nodes in the priority queue
+            while (priorityQueue.Count > 0)
+            {
+                var (currentDistance, currentVertex) = priorityQueue.Min;
+                priorityQueue.Remove(priorityQueue.Min);
+
+                Node vertexNode = GetNode(currentVertex);
+                if (vertexNode != null)
+                {
+                    ListNode neighbor = vertexNode.endPlaces.head;
+                    while (neighbor != null)
+                    {
+                        int weight = neighbor.weigth; // Use the weight of the edge
+                        if (weight > 0) // Ensure that there is an edge
+                        {
+                            int newDist = currentDistance + weight;
+                            if (newDist < distances[neighbor.place])
+                            {
+                                priorityQueue.Remove((distances[neighbor.place], neighbor.place));
+                                distances[neighbor.place] = newDist;
+                                previousNodes[neighbor.place] = currentVertex;
+                                priorityQueue.Add((newDist, neighbor.place));
+                            }
+                        }
+                        neighbor = neighbor.next;
+                    }
+                }
+            }
+
+            // Print the results
+            foreach (var kvp in distances)
+            {
+                string path = kvp.Key;
+                string prev = kvp.Key;
+                while (previousNodes[prev] != null)
+                {
+                    path = previousNodes[prev] + " -> " + path;
+                    prev = previousNodes[prev];
+                }
+                Console.WriteLine($"Distance from {start} to {kvp.Key} is {kvp.Value} via {path}");
+            }
+        }
+        private Node GetNode(string start)
+        {
+            Node current = head;
+            while (current != null)
+            {
+                if (current.start == start)
+                {
+                    return current;
+                }
+                current = current.next;
+            }
+            return null;
+        }
+    
+
+    public void addEdge(int weight, string start, string end)
         {
             Node current = head;
             while (current != null)
@@ -98,41 +179,13 @@ namespace TrainServer
         {
             Node currentRow = head;
             while (currentRow != null)
-            {
-                //ListNode currentColumn = currentRow.endPlaces.head;
-                //while (currentColumn != null)
-                //{
-                //    currentColumn = currentColumn.next;
-                //}
+            { 
                 Console.WriteLine("------" + currentRow.start);
                 currentRow.endPlaces.printList();
                 Console.WriteLine("--------------------------------------------");
                 currentRow = currentRow.next;
             }
         }
-
-
-
-       
-        
-        //private void addColumn(String end)
-        //{
-        //    if (head != null)
-        //    {
-        //        Node currentRow = this.head;
-        //        while (currentRow != null)
-        //        {
-        //            currentRow.endPlaces.add(int.MaxValue, currentRow.start, end);
-        //            currentRow = currentRow.next;
-        //        }
-        //        Node newRow = new Node(end);
-                
-
-
-        //    }
-
-        //}
-        
 
         public bool contains(String startElem)
         {
