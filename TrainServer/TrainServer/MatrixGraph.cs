@@ -6,14 +6,14 @@ namespace TrainServer
 {
     public class Node
     {
-        public String start;
-        public DoubleEndedLinkedList endPlaces;
+        public String startPlace;
+        public SinglyLinkedList endPlaces;
         public Node next;
 
         public Node(String start)
         {
-            this.start = start;
-            endPlaces = new DoubleEndedLinkedList();
+            this.startPlace = start;
+            endPlaces = new SinglyLinkedList();
             this.next = null;
         }
 
@@ -21,7 +21,7 @@ namespace TrainServer
     public class MatrixGraph
     {
 
-        private Node head;
+        public Node head;
 
 
         public void addVertex(string name)
@@ -49,11 +49,11 @@ namespace TrainServer
                     ListNode pastSaved = head.endPlaces.head;
                     while (pastSaved.next != null)
                     {
-                        newNode.endPlaces.add(0, pastSaved.place);
+                        newNode.endPlaces.add(0, pastSaved.endPlace);
                         pastSaved = pastSaved.next;
                     }
 
-                    newNode.endPlaces.add(0, pastSaved.place);
+                    newNode.endPlaces.add(0, pastSaved.endPlace);
                     current.next = newNode;
 
                 }
@@ -72,17 +72,17 @@ namespace TrainServer
             Node currentNode = head;
             while (currentNode != null)
             {
-                if (currentNode.start == start)
+                if (currentNode.startPlace == start)
                 {
-                    distances[currentNode.start] = 0;
-                    priorityQueue.Add((0, currentNode.start));
+                    distances[currentNode.startPlace] = 0;
+                    priorityQueue.Add((0, currentNode.startPlace));
                 }
                 else
                 {
-                    distances[currentNode.start] = int.MaxValue;
-                    priorityQueue.Add((int.MaxValue, currentNode.start));
+                    distances[currentNode.startPlace] = int.MaxValue;
+                    priorityQueue.Add((int.MaxValue, currentNode.startPlace));
                 }
-                previousNodes[currentNode.start] = null;
+                previousNodes[currentNode.startPlace] = null;
                 currentNode = currentNode.next;
             }
 
@@ -102,12 +102,12 @@ namespace TrainServer
                         if (weight > 0) // Ensure that there is an edge
                         {
                             int newDist = currentDistance + weight;
-                            if (newDist < distances[neighbor.place])
+                            if (newDist < distances[neighbor.endPlace])
                             {
-                                priorityQueue.Remove((distances[neighbor.place], neighbor.place));
-                                distances[neighbor.place] = newDist;
-                                previousNodes[neighbor.place] = currentVertex;
-                                priorityQueue.Add((newDist, neighbor.place));
+                                priorityQueue.Remove((distances[neighbor.endPlace], neighbor.endPlace));
+                                distances[neighbor.endPlace] = newDist;
+                                previousNodes[neighbor.endPlace] = currentVertex;
+                                priorityQueue.Add((newDist, neighbor.endPlace));
                             }
                         }
                         neighbor = neighbor.next;
@@ -133,7 +133,7 @@ namespace TrainServer
             Node current = head;
             while (current != null)
             {
-                if (current.start == start)
+                if (current.startPlace == start)
                 {
                     return current;
                 }
@@ -148,12 +148,12 @@ namespace TrainServer
             Node current = head;
             while (current != null)
             {
-                if (current.start == start)
+                if (current.startPlace == start)
                 {
                     ListNode currentEnd = current.endPlaces.head;
                     while (currentEnd != null)
                     {
-                        if (currentEnd.place == end)
+                        if (currentEnd.endPlace == end)
                         {
                             currentEnd.weigth = weight;
                             return;
@@ -173,26 +173,125 @@ namespace TrainServer
             RoutesDB.matrixGraph.printGraphMatrix();
         }
 
-         
+
 
         public void printGraphMatrix ()
         {
             Node currentRow = head;
             while (currentRow != null)
             { 
-                Console.WriteLine("------" + currentRow.start);
+                Console.WriteLine("------" + currentRow.startPlace);
                 currentRow.endPlaces.printList();
                 Console.WriteLine("--------------------------------------------");
                 currentRow = currentRow.next;
             }
         }
 
-        public bool contains(String startElem)
+        public bool deleteRoute(string start, string end)
+        {
+            Node current = head;
+            while (current != null)
+            {
+                if (current.startPlace == start)
+                {
+                    ListNode currentEnd = current.endPlaces.head;
+                    while (currentEnd != null)
+                    {
+                        if (currentEnd.endPlace == end)
+                        {
+                            currentEnd.weigth = 0;
+                            deleteNoConnectedVertex(end);
+                            return true;
+                        }
+                        currentEnd = currentEnd.next;
+                    }
+                }
+                current = current.next;
+            }
+            return false;
+        }
+
+        public void deleteNoConnectedVertex(string vertexName)
+        {
+            bool rowHasElements = false;
+            bool columnHasElements = false;
+
+            if (!contains(vertexName))
+            {
+                return;
+            }
+
+            Node current = head;
+            while (current != null)
+            {
+                ListNode currentEnd = current.endPlaces.head;
+                if (current.startPlace == vertexName)
+                {
+                    while (currentEnd != null)
+                    {
+                        if (currentEnd.endPlace == vertexName && currentEnd.weigth != 0)
+                        {
+                            rowHasElements = true;
+                            break;
+                        }
+                        currentEnd = currentEnd.next;
+                    }
+                } else
+                {
+                    while (currentEnd != null)
+                    {
+                        if (currentEnd.endPlace == vertexName && currentEnd.weigth != 0)
+                        {
+                            rowHasElements = true;
+                            break;
+                        }
+                        currentEnd = currentEnd.next;
+                    }
+                }
+                current = current.next;
+            }
+
+            if (!rowHasElements && !columnHasElements)
+            {
+                deleteRow(vertexName);
+                current = head;
+                while (current != null)
+                {
+                    current.endPlaces.remove(vertexName);
+                    current = current.next;
+                }
+
+            }
+        }
+            
+        
+
+        private bool deleteRow(string rowPlace)
+        {
+            if (head.startPlace == rowPlace)
+            {
+                head = head.next;
+                return true;
+            }
+            Node current = head;
+            while (current.next != null)
+            {
+                if (current.next.startPlace == rowPlace)
+                {
+                    current.next = current.next.next;
+                    return true;
+                }
+                current = current.next;
+            }
+            return false;
+        }
+
+        public bool contains(string startElem)
         {
             Node current = this.head;
             while (current != null)
             {
-                if (current.start == startElem)
+                if (current.startPlace == startElem)
                 {
                     return true;
                 }

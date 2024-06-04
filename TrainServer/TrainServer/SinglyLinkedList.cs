@@ -5,17 +5,17 @@ namespace TrainServer
     public class ListNode
     {
         public int weigth;
-        public string place;
+        public string endPlace;
         public ListNode next;
 
         public ListNode(int weigth, string place)
         {
             this.weigth = weigth;
-            this.place = place;
+            this.endPlace = place;
             this.next = null;
         }
     }
-    public class DoubleEndedLinkedList
+    public class SinglyLinkedList
     {
         public ListNode head;
 
@@ -42,8 +42,28 @@ namespace TrainServer
             ListNode current = this.head;
             while (current != null)
             {
-                if (current.place == startElem)
+                if (current.endPlace == startElem)
                 {
+                    return true;
+                }
+                current = current.next;
+            }
+            return false;
+        }
+
+        public bool remove(string toDelete)
+        {
+            if (head.endPlace == toDelete)
+            {
+                head = head.next;
+                return true;
+            }
+            ListNode current = head;
+            while (current.next != null)
+            {
+                if (current.next.endPlace == toDelete)
+                {
+                    current.next = current.next.next;
                     return true;
                 }
                 current = current.next;
@@ -57,7 +77,7 @@ namespace TrainServer
             while (current != null)
             {
                 
-                Console.WriteLine(current.place + " " +current.weigth);
+                Console.WriteLine(current.endPlace + " " +current.weigth);
                 current = current.next;
             }
         }

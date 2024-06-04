@@ -45,23 +45,30 @@ namespace TrainServer.Controllers
             graph.addEdge(4, "limon", "sanJose");
             graph.addEdge(14, "limon", "cartago");
             graph.addEdge(10, "limon", "heredia");
-            graph.addEdge(2, "limon", "guanacaste");
+            //graph.addEdge(2, "limon", "guanacaste");
 
-            graph.addEdge(2, "guanacaste", "limon");
-            graph.addEdge(1, "guanacaste", "puriscal");
-            graph.addEdge(6, "guanacaste", "perez");
+            //graph.addEdge(2, "guanacaste", "limon");
+            //graph.addEdge(1, "guanacaste", "puriscal");
+            //graph.addEdge(6, "guanacaste", "perez");
 
             graph.addEdge(8, "puriscal", "puntarenas");
             graph.addEdge(11, "puriscal", "alajuela");
-            graph.addEdge(1, "puriscal", "guanacaste");
+            //graph.addEdge(1, "puriscal", "guanacaste");
             graph.addEdge(7, "puriscal", "perez");
 
             graph.addEdge(2, "perez", "sanJose");
             graph.addEdge(6, "perez", "guanacaste");
             graph.addEdge(7, "perez", "puriscal");
             graph.dijkstra("puntarenas");
+            //Console.WriteLine(graph.head.endPlaces.remove("puntarenas"));
+            //Console.WriteLine(graph.head.endPlaces.remove("punta"));
             graph.printGraphMatrix();
-            //DoubleEndedLinkedList dd = new DoubleEndedLinkedList();
+            graph.deleteNoConnectedVertex("guanacaste");
+            graph.printGraphMatrix();
+            graph.deleteRoute("perez", "guanacaste");
+            graph.deleteNoConnectedVertex("punta");
+            graph.printGraphMatrix();
+            //SinglyLinkedList dd = new SinglyLinkedList();
             //dd.add(0, "1");
             //dd.add(0, "2");
             //dd.add(0, "3");
