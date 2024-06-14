@@ -1,0 +1,77 @@
+@use "sass:map";
+@use "@picocss/pico/scss/pico" as * with (
+  $theme-color: "indigo",
+  $semantic-root-element: "#root",
+  $enable-semantic-container: true,
+  $enable-classes: false
+);
+
+#root {
+  > main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: map.get(map.get($breakpoints, "sm"), "viewport");
+  }
+  .homePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .row-select-start-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > label {
+      padding: 0.3rem;
+    }
+  }
+  .login-form {
+    > label {
+      margin-bottom: 1rem;
+      user-select: none;
+    }
+  }
+
+  .header {
+    //background-color: black;
+    > .profile-options {
+      margin: 0.5rem;
+      > li > img {
+        border-radius: 0.3rem;
+        background-color: white;
+        height: 1rem;
+        width: 1rem;
+        margin: 0 0.5rem 0 0.5rem;
+      }
+    }
+  }
+  .admin-options-bar {
+    background-color: #111111;
+    padding: 1rem;
+    > a,
+    span {
+      margin: 0 0.5rem;
+    }
+  }
+  .routes-page {
+    > section {
+      height: 70vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      
+    }
+  }
+  .buy-tickets-page{
+    > label {
+      user-select: none;
+    }
+  }
+}
+
+/* Always set the map height explicitly to define the size of the div element that contains the map. */
+#map {
+  height: 100%;
+}

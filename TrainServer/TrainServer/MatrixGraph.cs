@@ -23,6 +23,58 @@ namespace TrainServer
 
         public Node head;
 
+        public MatrixGraph()
+        {
+            addVertex("puntarenas"); // 0
+            addVertex("alajuela"); // 1
+            addVertex("sanJose"); // 2
+            addVertex("cartago"); // 3
+            addVertex("heredia"); // 4
+            addVertex("limon"); // 5
+            addVertex("guanacaste"); // 6
+            addVertex("puriscal"); // 7
+            addVertex("perez"); // 8
+
+            // Adding edges based on the matrix
+            addEdge(4, "puntarenas", "alajuela");
+            //RoutesDB.routes.Add(new TrainRoute(4,1, "puntarenas", "alajuela"));
+            addEdge(8, "puntarenas", "puriscal");
+
+            addEdge(4, "alajuela", "puntarenas");
+            addEdge(8, "alajuela", "sanJose");
+            addEdge(11, "alajuela", "puriscal");
+
+            addEdge(8, "sanJose", "alajuela");
+            addEdge(7, "sanJose", "cartago");
+            addEdge(4, "sanJose", "limon");
+            addEdge(2, "sanJose", "perez");
+
+            addEdge(7, "cartago", "sanJose");
+            addEdge(9, "cartago", "heredia");
+            addEdge(14, "cartago", "limon");
+
+            addEdge(9, "heredia", "cartago");
+            addEdge(10, "heredia", "limon");
+
+            addEdge(4, "limon", "sanJose");
+            addEdge(14, "limon", "cartago");
+            addEdge(10, "limon", "heredia");
+            addEdge(2, "limon", "guanacaste");
+
+            addEdge(2, "guanacaste", "limon");
+            addEdge(1, "guanacaste", "puriscal");
+            addEdge(6, "guanacaste", "perez");
+
+            addEdge(8, "puriscal", "puntarenas");
+            addEdge(11, "puriscal", "alajuela");
+            addEdge(1, "puriscal", "guanacaste");
+            addEdge(7, "puriscal", "perez");
+
+            addEdge(2, "perez", "sanJose");
+            addEdge(6, "perez", "guanacaste");
+            addEdge(7, "perez", "puriscal");
+            dijkstra("puntarenas");
+        }
 
         public void addVertex(string name)
         {
@@ -62,13 +114,12 @@ namespace TrainServer
 
         }
 
-        public void dijkstra(string start)
+        public List<DijkstraRoute> dijkstra(string start)
         {
             var distances = new Dictionary<string, int>();
             var previousNodes = new Dictionary<string, string>();
             var priorityQueue = new SortedSet<(int Distance, string Node)>();
 
-            // Initialize distances and priority queue
             Node currentNode = head;
             while (currentNode != null)
             {
@@ -86,7 +137,6 @@ namespace TrainServer
                 currentNode = currentNode.next;
             }
 
-            // Process the nodes in the priority queue
             while (priorityQueue.Count > 0)
             {
                 var (currentDistance, currentVertex) = priorityQueue.Min;
@@ -98,8 +148,8 @@ namespace TrainServer
                     ListNode neighbor = vertexNode.endPlaces.head;
                     while (neighbor != null)
                     {
-                        int weight = neighbor.weigth; // Use the weight of the edge
-                        if (weight > 0) // Ensure that there is an edge
+                        int weight = neighbor.weigth; 
+                        if (weight > 0) 
                         {
                             int newDist = currentDistance + weight;
                             if (newDist < distances[neighbor.endPlace])
@@ -115,19 +165,29 @@ namespace TrainServer
                 }
             }
 
-            // Print the results
+            List<DijkstraRoute> dijkstraRoutes = new List<DijkstraRoute>();
+            
             foreach (var kvp in distances)
             {
+                // simplificacion hecha por VS en lugar de:
+                // List<string> route = new List<string>;
+                // route.Add(kvp.Key);
+                List<string> route = [kvp.Key];
                 string path = kvp.Key;
                 string prev = kvp.Key;
                 while (previousNodes[prev] != null)
                 {
+                    Console.WriteLine($"sisisi {previousNodes[prev]}");
+                    route.Insert(0, previousNodes[prev]);
                     path = previousNodes[prev] + " -> " + path;
                     prev = previousNodes[prev];
                 }
+                dijkstraRoutes.Add(new DijkstraRoute(start, kvp.Key, kvp.Value, route.ToArray()));
                 Console.WriteLine($"Distance from {start} to {kvp.Key} is {kvp.Value} via {path}");
             }
+            return dijkstraRoutes;
         }
+
         private Node GetNode(string start)
         {
             Node current = head;
@@ -141,9 +201,9 @@ namespace TrainServer
             }
             return null;
         }
-    
 
-    public void addEdge(int weight, string start, string end)
+
+        public void addEdge(int weight, string start, string end)
         {
             Node current = head;
             while (current != null)
@@ -156,6 +216,7 @@ namespace TrainServer
                         if (currentEnd.endPlace == end)
                         {
                             currentEnd.weigth = weight;
+                            RoutesDB.routes.Add(new TrainRoute(weight*25, weight, start, end));
                             return;
                         }
                         currentEnd = currentEnd.next;
@@ -169,17 +230,18 @@ namespace TrainServer
         {
             RoutesDB.matrixGraph.addVertex(route.Start);
             RoutesDB.matrixGraph.addVertex(route.End);
-            RoutesDB.matrixGraph.addEdge(route.Cost, route.Start, route.End);
-            RoutesDB.matrixGraph.printGraphMatrix();
+            RoutesDB.matrixGraph.addEdge(route.DistanceInKm, route.Start, route.End);
+            //RoutesDB.routes.Add(route);
+            //RoutesDB.matrixGraph.printGraphMatrix();
         }
 
 
 
-        public void printGraphMatrix ()
+        public void printGraphMatrix()
         {
             Node currentRow = head;
             while (currentRow != null)
-            { 
+            {
                 Console.WriteLine("------" + currentRow.startPlace);
                 currentRow.endPlaces.printList();
                 Console.WriteLine("--------------------------------------------");
@@ -236,7 +298,8 @@ namespace TrainServer
                         }
                         currentEnd = currentEnd.next;
                     }
-                } else
+                }
+                else
                 {
                     while (currentEnd != null)
                     {
@@ -263,8 +326,8 @@ namespace TrainServer
 
             }
         }
-            
-        
+
+
 
         private bool deleteRow(string rowPlace)
         {
@@ -298,6 +361,36 @@ namespace TrainServer
                 current = current.next;
             }
             return false;
+        }
+
+        public string[] getPlacesList()
+        {
+            string[] placesList = [];
+            if (head != null)
+            {
+                placesList = this.head.endPlaces.toArray();
+            }
+            return placesList;
+        }
+        public void matrixToRoutesDB()
+        {
+            Node current = this.head;
+            while (current != null)
+            {
+                ListNode currentEndPlace = current.endPlaces.head;
+                while (currentEndPlace != null)
+                {
+                    if (currentEndPlace.weigth != 0)
+                    {
+                        RoutesDB.routes.Add(new TrainRoute(currentEndPlace.weigth * 25, currentEndPlace.weigth, current.startPlace, currentEndPlace.endPlace));
+
+                    }
+                    currentEndPlace = currentEndPlace.next;
+
+                }
+                current = current.next;
+            }
+
         }
     }
 }

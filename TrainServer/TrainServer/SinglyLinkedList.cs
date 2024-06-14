@@ -1,4 +1,5 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.Drawing;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace TrainServer
 {
@@ -18,6 +19,7 @@ namespace TrainServer
     public class SinglyLinkedList
     {
         public ListNode head;
+        public int size = 0;
 
         public void add(int weigth, string place)
         {
@@ -25,6 +27,7 @@ namespace TrainServer
             if (head == null)
             {
                 head = newNode;
+                size++;
             }
             else
             {
@@ -34,6 +37,7 @@ namespace TrainServer
                     current = current.next;
                 }
                 current.next = newNode;
+                size++;
             }
         }
 
@@ -56,6 +60,7 @@ namespace TrainServer
             if (head.endPlace == toDelete)
             {
                 head = head.next;
+                size--;
                 return true;
             }
             ListNode current = head;
@@ -64,6 +69,7 @@ namespace TrainServer
                 if (current.next.endPlace == toDelete)
                 {
                     current.next = current.next.next;
+                    size--;
                     return true;
                 }
                 current = current.next;
@@ -76,10 +82,26 @@ namespace TrainServer
             ListNode current = head;
             while (current != null)
             {
-                
-                Console.WriteLine(current.endPlace + " " +current.weigth);
+
+                Console.WriteLine(current.endPlace + " " + current.weigth);
                 current = current.next;
             }
+        }
+
+        public string[] toArray()
+        {
+            List<string> list = new List<string>();
+
+            ListNode current = head;
+            while (current != null)
+            {
+
+                list.Add(current.endPlace);
+                current = current.next;
+            }
+            string[] array = list.ToArray();
+            Console.WriteLine(array);
+            return array;
         }
 
         //public void remove(T data) { }

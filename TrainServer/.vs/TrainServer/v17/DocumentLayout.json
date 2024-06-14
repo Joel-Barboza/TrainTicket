@@ -7,28 +7,44 @@
       "RelativeMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|solutionrelative:trainserver\\controllers\\routescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|c:\\users\\usuario\\desktop\\universidad\\2024_s1\\datos 1\\trainticket\\trainserver\\trainserver\\entities\\trainroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|solutionrelative:trainserver\\entities\\trainroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|c:\\users\\usuario\\desktop\\universidad\\2024_s1\\datos 1\\trainticket\\trainserver\\trainserver\\matrixgraph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|solutionrelative:trainserver\\matrixgraph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|c:\\users\\usuario\\desktop\\universidad\\2024_s1\\datos 1\\trainticket\\trainserver\\trainserver\\singlylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|solutionrelative:trainserver\\singlylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|c:\\users\\usuario\\desktop\\universidad\\2024_s1\\datos 1\\trainticket\\trainserver\\trainserver\\entities\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|solutionrelative:trainserver\\entities\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|c:\\users\\usuario\\desktop\\universidad\\2024_s1\\datos 1\\trainticket\\trainserver\\trainserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|solutionrelative:trainserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|c:\\users\\usuario\\desktop\\universidad\\2024_s1\\datos 1\\trainticket\\trainserver\\trainserver\\datafiles\\soldtickets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|solutionrelative:trainserver\\datafiles\\soldtickets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|c:\\users\\usuario\\desktop\\universidad\\2024_s1\\datos 1\\trainticket\\trainserver\\trainserver\\entities\\dijkstraroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|solutionrelative:trainserver\\entities\\dijkstraroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|c:\\users\\usuario\\desktop\\universidad\\2024_s1\\datos 1\\trainticket\\trainserver\\trainserver\\entities\\routesdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|solutionrelative:trainserver\\entities\\routesdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|c:\\users\\usuario\\desktop\\universidad\\2024_s1\\datos 1\\trainticket\\trainserver\\trainserver\\trainserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|solutionrelative:trainserver\\trainserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|c:\\users\\usuario\\desktop\\universidad\\2024_s1\\datos 1\\trainticket\\trainserver\\trainserver\\datafiles\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|solutionrelative:trainserver\\datafiles\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|c:\\users\\usuario\\desktop\\universidad\\2024_s1\\datos 1\\trainticket\\trainserver\\trainserver\\entities\\trainroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|solutionrelative:trainserver\\entities\\trainroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|c:\\users\\usuario\\desktop\\universidad\\2024_s1\\datos 1\\trainticket\\trainserver\\trainserver\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|solutionrelative:trainserver\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|c:\\users\\usuario\\desktop\\universidad\\2024_s1\\datos 1\\trainticket\\trainserver\\trainserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|solutionrelative:trainserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|c:\\users\\usuario\\desktop\\universidad\\2024_s1\\datos 1\\trainticket\\trainserver\\trainserver\\singlylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8931B798-7CA1-4C1A-BED1-8E5A5A2EE7AF}|TrainServer\\TrainServer.csproj|solutionrelative:trainserver\\singlylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,15 +70,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TrainRoute.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\Entities\\TrainRoute.cs",
-              "RelativeDocumentMoniker": "TrainServer\\Entities\\TrainRoute.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\Entities\\TrainRoute.cs",
-              "RelativeToolTip": "TrainServer\\Entities\\TrainRoute.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAkAAAA",
+              "DocumentIndex": 3,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\Entities\\Ticket.cs",
+              "RelativeDocumentMoniker": "TrainServer\\Entities\\Ticket.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\Entities\\Ticket.cs",
+              "RelativeToolTip": "TrainServer\\Entities\\Ticket.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T06:31:43.852Z",
+              "WhenOpened": "2024-06-14T19:11:10.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SoldTickets.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\DataFiles\\SoldTickets.json",
+              "RelativeDocumentMoniker": "TrainServer\\DataFiles\\SoldTickets.json",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\DataFiles\\SoldTickets.json",
+              "RelativeToolTip": "TrainServer\\DataFiles\\SoldTickets.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-14T17:25:47.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DijkstraRoute.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\Entities\\DijkstraRoute.cs",
+              "RelativeDocumentMoniker": "TrainServer\\Entities\\DijkstraRoute.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\Entities\\DijkstraRoute.cs",
+              "RelativeToolTip": "TrainServer\\Entities\\DijkstraRoute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T08:41:08.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SinglyLinkedList.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\SinglyLinkedList.cs",
+              "RelativeDocumentMoniker": "TrainServer\\SinglyLinkedList.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\SinglyLinkedList.cs",
+              "RelativeToolTip": "TrainServer\\SinglyLinkedList.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAUwGYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T23:00:51.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MatrixGraph.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\MatrixGraph.cs",
+              "RelativeDocumentMoniker": "TrainServer\\MatrixGraph.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\MatrixGraph.cs*",
+              "RelativeToolTip": "TrainServer\\MatrixGraph.cs*",
+              "ViewState": "AQIAAO8AAAAAAAAAAIA3wKgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T22:59:28.707Z",
               "EditorCaption": ""
             },
             {
@@ -73,74 +141,74 @@
               "RelativeDocumentMoniker": "TrainServer\\Controllers\\RoutesController.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\Controllers\\RoutesController.cs",
               "RelativeToolTip": "TrainServer\\Controllers\\RoutesController.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAgwEMAAAA1AAAA",
+              "ViewState": "AQIAAD0BAAAAAAAAAAAmwFcBAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T01:21:11.92Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SinglyLinkedList.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\SinglyLinkedList.cs",
-              "RelativeDocumentMoniker": "TrainServer\\SinglyLinkedList.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\SinglyLinkedList.cs",
-              "RelativeToolTip": "TrainServer\\SinglyLinkedList.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAIwDEAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T06:50:06.054Z",
+              "DocumentIndex": 7,
+              "Title": "Users.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\DataFiles\\Users.json",
+              "RelativeDocumentMoniker": "TrainServer\\DataFiles\\Users.json",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\DataFiles\\Users.json",
+              "RelativeToolTip": "TrainServer\\DataFiles\\Users.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-14T11:27:21.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "TrainServer\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\Properties\\launchSettings.json",
+              "RelativeToolTip": "TrainServer\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-06T03:49:30.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\appsettings.json",
+              "RelativeDocumentMoniker": "TrainServer\\appsettings.json",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\appsettings.json",
+              "RelativeToolTip": "TrainServer\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-06T03:49:22.432Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MatrixGraph.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\MatrixGraph.cs",
-              "RelativeDocumentMoniker": "TrainServer\\MatrixGraph.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\MatrixGraph.cs",
-              "RelativeToolTip": "TrainServer\\MatrixGraph.cs",
-              "ViewState": "AQIAALIAAAAAAAAAAAAUwM0AAAA1AAAA",
+              "Title": "TrainRoute.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\Entities\\TrainRoute.cs",
+              "RelativeDocumentMoniker": "TrainServer\\Entities\\TrainRoute.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\Entities\\TrainRoute.cs",
+              "RelativeToolTip": "TrainServer\\Entities\\TrainRoute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T06:42:28.45Z",
+              "WhenOpened": "2024-06-02T06:31:43.852Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\Program.cs",
-              "RelativeDocumentMoniker": "TrainServer\\Program.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\Program.cs",
-              "RelativeToolTip": "TrainServer\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T01:07:54.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "RoutesDB.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\Entities\\RoutesDB.cs",
               "RelativeDocumentMoniker": "TrainServer\\Entities\\RoutesDB.cs",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\Entities\\RoutesDB.cs",
               "RelativeToolTip": "TrainServer\\Entities\\RoutesDB.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T01:44:38.457Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TrainServer.csproj",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\TrainServer.csproj",
-              "RelativeDocumentMoniker": "TrainServer\\TrainServer.csproj",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Universidad\\2024_S1\\Datos 1\\TrainTicket\\TrainServer\\TrainServer\\TrainServer.csproj",
-              "RelativeToolTip": "TrainServer\\TrainServer.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-16T01:21:45.719Z",
               "EditorCaption": ""
             }
           ]

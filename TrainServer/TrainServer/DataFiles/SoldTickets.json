@@ -1,0 +1,29 @@
+[
+  {
+    "Username": "user",
+    "Route": [
+      "start",
+      "end"
+    ],
+    "FromDate": "startDate",
+    "ToDate": "endDate"
+  },
+  {
+    "Username": "user",
+    "Route": [
+      "start",
+      "end"
+    ],
+    "FromDate": "startDate",
+    "ToDate": "endDate"
+  },
+  {
+    "Username": "user",
+    "Route": [
+      "start",
+      "end"
+    ],
+    "FromDate": "startDate",
+    "ToDate": "endDate"
+  }
+]
