@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { PostTrainRoutes, GetTrainRoutes } from "../services/TrainRouteService";
+import { GetTrainRoutes } from "../services/TrainRouteService";
 
 import RoutesGraph from "../components/RoutesGraph";
 
